@@ -1,0 +1,11 @@
+from random import randint
+ 
+first = set(randint(1, 10) for i in range(int(input("Введите количество элементов первого  множества: "))))
+print(first)
+second = set(randint(1, 10) for i in range(int(input("Введите количество элементов  второго множества: "))))
+print(second)
+ 
+ 
+result = list(set(first) & set(second))
+result.sort() 
+print(result)
